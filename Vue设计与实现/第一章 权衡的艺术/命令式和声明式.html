@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+<button></button>
+<script>
+    // ? 1. 命令式 直接用代码怎么去做
+    // 1 获取到div元素
+    const div = document.querySelector("#app")
+    // 2 改变元素内容
+    div.innerHTML = "Hello World"
+    // 3 给元素添加监听
+    div.addEventListener('click',() => {
+        alert('OK')
+    })
+    // ? 2. 声明式 告诉Vue去做什么
+    // !Vue中 <div @click = "()=>{alert('OK')}">Hello World</div>
+    // ? 结论
+    // 性能:声明式代码的性能不优于命令式.
+</script>
+</body>
+</html>
